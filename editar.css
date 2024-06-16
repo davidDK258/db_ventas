@@ -1,0 +1,50 @@
+/* Estilos para el contenedor del formulario */
+form {
+    display: flex; /* Cambio para convertirlo en un contenedor flex */
+    flex-direction: row; /* Alinea los elementos horizontalmente */
+    background-color: #f9f9f9;
+    padding: 30px; /* Aumenta el padding para más espacio alrededor del formulario */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 30px;
+    max-width: 1000px; /* Ancho máximo del formulario */
+    margin-left: auto; /* Centra el formulario horizontalmente */
+    margin-right: auto; /* Centra el formulario horizontalmente */
+    justify-content: center; /* Centra los elementos horizontalmente */
+}
+
+/* Estilos para los campos de entrada y etiquetas */
+form label,
+form input[type="text"],
+form input[type="password"],
+form select {
+    margin-bottom: 20px; /* Aumenta el espacio entre los elementos */
+    flex: 1; /* El formulario se expandirá para llenar el espacio disponible */
+}
+
+/* Estilos para los campos de entrada */
+form input[type="text"],
+form input[type="password"],
+form select {
+    padding: 15px; /* Aumenta el padding para hacer los campos más grandes */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Estilos para el botón de enviar */
+form button[type="submit"] {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px; /* Reducir el padding para hacer el botón más pequeño */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px; /* Reducir el espacio entre el botón y los elementos superiores */
+    margin-bottom: 20px; /* Agregar un poco más de espacio debajo del botón */
+}
+
+/* Estilos para el botón de enviar al pasar el ratón */
+form button[type="submit"]:hover {
+    background-color: #0056b3;
+}

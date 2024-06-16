@@ -1,0 +1,72 @@
+
+body{
+    background-image: url(imagen/f1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+h2 {
+    color: #333;
+    text-align: center; /* Centrar el título */
+    margin-bottom: 20px;
+}
+
+form {
+    max-width: 300px; /* Reducir aún más el ancho del formulario */
+    background: #fff;
+    padding: 10px; /* Reducir el padding */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 0 auto; /* Centrar el formulario horizontalmente */
+}
+
+label {
+    display: inline-block;
+    width: 100px; /* Reducir el ancho de los labels */
+    margin-bottom: 8px;
+    color: #333;
+}
+
+input[type=text], input[type=email], input[type=number], select {
+    width: calc(100% - 20px); /* Ajustar el ancho de los inputs */
+    padding: 6px; /* Reducir el padding de los inputs */
+    margin-bottom: 8px; /* Reducir el margen inferior */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px; /* Reducir el tamaño de la fuente */
+}
+
+/* Estilo para los botones dentro de formularios */
+form button[type=submit], 
+form input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 8px 10px; /* Reducir el padding para hacer los botones más pequeños */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px; /* Mantener el tamaño de la fuente */
+    margin-top: 10px; /* Espacio arriba */
+    margin-bottom: 10px; /* Espacio abajo */
+    margin-right: 5px; /* Espacio entre los botones */
+    vertical-align: middle; /* Alinear verticalmente los botones */
+}
+
+/* Estilo específico para el botón "Salir" */
+form[action="interfaz.php"] input[type=submit] {
+    margin-right: 0; /* No añadir espacio a la derecha del botón "Salir" */
+}
+
+/* Estilo para centrar los botones y darles un margen top */
+.button-group {
+    margin-top: 10px;
+    text-align: center; /* Centrar los botones */
+    line-height: 30px; /* Ajustar la altura de línea para centrar verticalmente */
+}
+
+.button-group button,
+.button-group input[type=submit] {
+    margin-left: 5px; /* Espacio entre los botones */
+}
